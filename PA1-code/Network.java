@@ -9,7 +9,7 @@
  *
  * @author Kerly Titus
  */
-public class Network {
+public class Network extends Thread{
     
     private static int maxNbPackets;                           /* Maximum number of simultaneous transactions handled by the network buffer */
     private static int inputIndexClient, inputIndexServer, outputIndexServer, outputIndexClient;                   /* Network buffer indices for accessing the input buffer (inputIndexClient, outputIndexServer) and output buffer (inputIndexServer, outputIndexClient) */
@@ -557,6 +557,18 @@ public class Network {
     	while (true)
     	{
 		/* Implement here the code for the run method ... */
+
+            //set status of network to active,
+            this.setme
+            this.setSerConnectionStatus("active");
+            //connect client ip
+            //connect server ip
+            //recieve transactions from client
+            //send transcations to server
+            //server processes transaction
+            //recieve from server
+            //send transaction to client
+
     	}    
     }
 }
